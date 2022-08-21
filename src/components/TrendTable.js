@@ -34,7 +34,7 @@ export default function TrendTable({woeid}) {
                                     <th scope="col">
                                         <a href={data.url} target="_blank" rel="noreferrer noopener">{data.name}</a>
                                     </th>
-                                    <th scope="col">{data.tweet_volume ? data.tweet_volume : "Under 10K"}</th>
+                                    <th scope="col">{data.tweet_volume ?? "Under 10K"}</th>
                                 </tr>
                             )
                         })
