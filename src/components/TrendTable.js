@@ -17,7 +17,7 @@ export default function TrendTable({woeid}) {
                 // <h1 class="display-4 text-center">
                 //     You are viewing Trends in {trendPlace}.
                 // </h1>
-                <table className="table my-3">
+                <table className="table my-3 w-75 mx-auto">
                     <thead className="thead-light">
                     <tr className="table-primary" key="table head">
                         <th scope="col">Rank</th>
