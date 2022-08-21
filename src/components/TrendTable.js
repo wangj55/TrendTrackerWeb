@@ -2,9 +2,7 @@ import { useEffect, useState } from "react"
 import { fetchCityTrends } from "../server/server"
 
 export default function TrendTable({woeid}) {
-    const [cityData, setCityData] = useState({
-        trends: []
-    })
+    const [cityData, setCityData] = useState({})
 
     useEffect(() => {
         fetchCityTrends(woeid).then((res) => {
@@ -15,7 +13,7 @@ export default function TrendTable({woeid}) {
 
     return (
         <div className="container">
-            {cityData &&
+            {cityData.trends &&
                 // <h1 class="display-4 text-center">
                 //     You are viewing Trends in {trendPlace}.
                 // </h1>
