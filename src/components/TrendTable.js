@@ -12,12 +12,12 @@ export default function TrendTable({woeid}) {
     }, [woeid])
 
     return (
-        <div className="container">
+        <>
             {cityData.trends &&
                 // <h1 class="display-4 text-center">
                 //     You are viewing Trends in {trendPlace}.
                 // </h1>
-                <table className="table">
+                <table className="table my-3">
                     <thead className="thead-light">
                     <tr className="table-primary" key="table head">
                         <th scope="col">Rank</th>
@@ -43,6 +43,6 @@ export default function TrendTable({woeid}) {
                 </table>
             }
 
-        </div>
+        </>
     )
 }
